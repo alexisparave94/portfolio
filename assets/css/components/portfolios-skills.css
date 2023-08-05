@@ -1,0 +1,93 @@
+.p-skills{
+  padding: 48px 0px;
+  margin-top: 0px;
+}
+
+.p-skills__cards {
+  padding: 24px;
+}
+
+.p-skills__cards-icons {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-skills__cards-icons .icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.p-skills__cards-icons .flecha {
+  padding: 3px;;
+}
+
+.p-skills__cards-icons .icons i {
+  width: 40px;
+  height: 40px;
+  background-color: var(--gray-100);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gray-300)
+}
+
+.p-skills__cards-content h3{
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.p-skills__cards-content p {
+  margin: 8px 0px;
+}
+
+.p-skills__cards-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.p-skills__cards-badges ul li{
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: var(--gray-100);
+}
+
+.p-skills__cards-badges{
+  margin-top: 0.8rem;
+}
+
+.p-skills__cards-links{
+  display: flex;
+  margin-top: 0.8rem;
+}
+
+.p-skills__cards-links p{
+  margin: 0;
+  padding-left: .25rem;
+}
+
+.p-skills__cards-links ul {
+  padding-left: .5rem;
+}
+
+.p-skills__cards-links li {
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: #DAECFE;
+  color: #007FFF;
+}
+
+.p-skills__cards-links a{
+  color: #007FFF;
+}
+
+.p-skills__cards-links li:hover{
+  background-color: #A1CFFF;
+}

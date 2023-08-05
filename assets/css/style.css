@@ -1,0 +1,45 @@
+/* Global */
+@import url("./global.css");
+
+/* Header */
+@import url("./components/header.css");
+
+/* Footer */
+@import url("./components/footer.css");
+
+/* Section Skills */
+@import url("./components/skills.css");
+
+/* Section Portafolio Skills */
+@import url("./components/portfolios-skills.css");
+
+p, li {
+  font-family: var(--font-secondary);
+}
+
+.welcome p {
+  margin-top: 16px;
+}
+
+.welcome__frame h1 strong {
+  color: #007FFF;
+}
+
+@media screen and (max-width: 640px) {
+  .skills_frame{
+    display: grid;
+    grid-template: 1fr/ 1fr;
+    gap: 40px 40px;
+  }
+
+  .hobbies__frame{
+    display: grid;
+    grid-template: 1fr/ 1fr;
+    gap: 16px 16px;
+  }
+
+  .frame-input {
+    display: grid;
+    grid-template: 1fr/ 1fr;
+  }
+}

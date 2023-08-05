@@ -1,0 +1,142 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  background-color: var(--gray-100);
+  padding: 16px 0px;
+}
+
+.navlink {
+  color: #007FFF;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  margin: 2px 0px;
+  padding: 4px 8px;
+}
+
+.navlink:hover {
+  background-color: #DAECFE;
+}
+
+.navlink:focus {
+  outline: 1px solid #007FFF;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  font-family: var(--font-primary);
+  line-height: 36px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.navbar-right {
+  font-family: var(--font-secondary);
+  display: flex;
+  min-height: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-right nav {
+  min-height: 32px;
+}
+
+.navbar-right nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  height: 32px;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-right nav ul li {
+  padding: 0px 0px;
+}
+
+.toggle-close, .toggle-menu, #main-menu {
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  .toggle-close, .toggle-menu, #main-menu {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  .navbar-right{
+    margin-top: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .navbar {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .navbar-right{
+    display: none;
+    margin-top: 1rem;
+  }
+
+  .actions {
+    width: 100%;
+  }
+  
+  .navbar-right nav {
+    height: 100px;
+  }
+  .navbar-right ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .toggle-close, #main-menu {
+    display: none;
+  }
+
+  .toggle-menu {
+    display: flex;
+  }
+
+  .toggle-close, .toggle-menu {
+    position: absolute;
+    top: 26px;
+    right: 16px;
+  }
+
+  #main-menu:checked ~ .navbar-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #main-menu:checked ~ .toggle-close {
+    display: flex;
+  }
+
+  #main-menu:checked ~ .toggle-menu {
+    display: none;
+  }
+}
