@@ -51,6 +51,11 @@
   gap: 8px;
 }
 
+.p-skills__cards-badges ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .p-skills__cards-badges ul li{
   display: flex;
   align-items: center;

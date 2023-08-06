@@ -94,7 +94,7 @@ a {
 
   .navbar-right{
     display: none;
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 
   .actions {
@@ -102,8 +102,9 @@ a {
   }
   
   .navbar-right nav {
-    height: 100px;
+    height: 4.5rem;
   }
+
   .navbar-right ul {
     flex-direction: column;
     align-items: center;
